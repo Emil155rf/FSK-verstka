@@ -8,4 +8,4 @@ JS
 BOOTSTRAP
 
 
-Посмотреть сайт здесь: https://fsk-main.netlify.app
+Посмотреть сайт здесь: https://fsk-estate.netlify.app
