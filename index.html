@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/fonts.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -27,42 +27,42 @@
                     <div class="dropdown">
                         <a class="dropBtn header__a" href="">Новостройки</a>
                         <div class="dropdown-content">
-                            <a href="#">Все новостройки</a>
-                            <a href="#">Новостройки биснес и премиум</a>
-                            <a href="#">Готовые квартиры</a>
-                            <a href="#">Акции и скидки</a>
-                            <a href="#">Покупка квартиры онлайн</a>
-                            <a href="#">Вопросы и ответы</a>
+                            <a href="">Все новостройки</a>
+                            <a href="">Новостройки биснес и премиум</a>
+                            <a href="">Готовые квартиры</a>
+                            <a href="">Акции и скидки</a>
+                            <a href="">Покупка квартиры онлайн</a>
+                            <a href="">Вопросы и ответы</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="dropBtn header__a" href="">Загородная</a>
                         <div class="dropdown-content">
-                            <a href="#">Загородная недвижимость</a>
-                            <a href="#">Акции и скидки</a>
-                            <a href="#">Покупка онлайн</a>
-                            <a href="#">Вопросы и ответы</a>
+                            <a href="">Загородная недвижимость</a>
+                            <a href="">Акции и скидки</a>
+                            <a href="">Покупка онлайн</a>
+                            <a href="">Вопросы и ответы</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="dropBtn header__a" href="">Коммерческая</a>
                         <div class="dropdown-content">
-                            <a href="#">Коммерческая недвижимость</a>
-                            <a href="#">Инвестиции в коммерцию</a>
-                            <a href="#">Поиск арендатора</a>
+                            <a href="">Коммерческая недвижимость</a>
+                            <a href="">Инвестиции в коммерцию</a>
+                            <a href="">Поиск арендатора</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="dropBtn header__a" href="">Вторичная</a>
                         <div class="dropdown-content">
-                            <a href="#">Вторичная недвижимость</a>
-                            <a href="#">Trade-in</a>
+                            <a href="">Вторичная недвижимость</a>
+                            <a href="">Trade-in</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a class="dropBtn header__a" href="">Акции</a>
                         <div class="dropdown-content">
-                            <a href="#">Акции и скидки</a>
+                            <a href="">Акции и скидки</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -105,11 +105,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- Swiper -->
-
-
-
-
     <!-- carousel ./  -->
     <!-- cookie  -->
     <div class="popup" id="popup">
@@ -128,10 +123,13 @@
             <div class="city__inner">
                 <h1 class="city__h1">Новостройки от застройщика</h1>
                 <div class="city__btn">
-                    <button class="btn__1 bb">Показать на карте <i style="position: relative; bottom: 3px;"
-                            class="bi bi-geo-alt"></i></button>
-                    <button class="btn__2 bb">Фильтры <i style="position: relative; bottom: 5px;"
-                            class="bi bi-sliders"></i></button>
+                    <div class="city__btn-inner">
+
+                        <button class="btn__1 bb">Показать на карте  &nbsp;<i style="position: relative; bottom: 3px;"
+                                class="bi bi-geo-alt"></i></button>
+                        <button class="btn__2 bb">Фильтры  &nbsp;<i style="position: relative; bottom: 5px;"
+                                class="bi bi-sliders"></i></button>
+                    </div>
                 </div>
                 <div class="city__flat">
                     <div class="input__1">
@@ -160,12 +158,12 @@
                         <div class="select">
                             <select class="dateBtn" id="date" name="date">
                                 <option style="font-weight: 300;" value="" selected>Все</option>
-                                <option class="option" value="na">Сдан</option>
-                                <option class="option" value="la">3 квартал 2024</option>
-                                <option class="option" value="eu">4 квартал 2024</option>
-                                <option class="option" value="me">2 квартал 2025</option>
-                                <option class="option" value="af">3 квартал 2026</option>
-                                <option class="option" value="as">3 квартал 2027</option>
+                                <option class="option" >Сдан</option>
+                                <option class="option" >3 квартал 2024</option>
+                                <option class="option" >4 квартал 2024</option>
+                                <option class="option" >2 квартал 2025</option>
+                                <option class="option" >3 квартал 2026</option>
+                                <option class="option" >3 квартал 2027</option>
                             </select>
                         </div>
                     </div>
@@ -174,10 +172,10 @@
                         <div class="select">
                             <select class="dateBtn" id="date" name="date">
                                 <option style="font-weight: 300;" value="" selected>Москва и МО</option>
-                                <option class="option" value="na">Санкт-Петербург</option>
-                                <option class="option" value="la">Калуга и область</option>
-                                <option class="option" value="eu">Владивосток</option>
-                                <option class="option" value="me">Казань</option>
+                                <option class="option" >Санкт-Петербург</option>
+                                <option class="option" >Калуга и область</option>
+                                <option class="option" >Владивосток</option>
+                                <option class="option" >Казань</option>
                             </select>
                         </div>
                     </div>
@@ -197,7 +195,6 @@
                         <button style="margin-right: .5em;" class="card__btn-2">Бизнес-класс</button>
                     </div>
                     <div class="card-text">Симоновский Вал</div>
-                    <!-- <div class="card-text-2">Дубровка</div> -->
                 </div>
                 <div class="card">
                     <img src="images/1726146895853-feee9edc8af1a8b31733998597fd189b.avif" alt="Example Image">
@@ -268,6 +265,14 @@
             </div>
             <button class="card__btn-3">ЕЩЕ</button>
         </div>
+    </div>
+    <div class="map">
+        <div class="card-map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A639f51620c93766d21a626550a4b3c83494f3b11737c7ca5b74718790d9b40a1&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <button class="btn__3"><i style="position: relative; bottom: 4px;" class="bi bi-arrow-left"></i> Назад</button>
+
     </div>
     <!-- card ./ -->
     <!-- credit -->
@@ -394,7 +399,7 @@
                     <h1 class="forbes__h1">Топ-10 надёжных застройщиков страны</h1>
                 </div>
                 <div class="forbes__grid">
-                    <div class="grid1">
+                    <div style="margin-bottom: 0.5em;" class="grid1 grid-first">
                         <h1 class="forbes__h1-2">19</h1>
                         <p class="forbes__p">лет стабильного роста бизнеса</p>
                     </div>
@@ -406,11 +411,11 @@
                         <h1 class="forbes__h1-2">>700</h1>
                         <p class="forbes__p">тыс м² введено в эксплуатацию в 2023 году</p>
                     </div>
-                    <div class="grid1">
+                    <div class="grid1 grid-second">
                         <h1 class="forbes__h1-2">>20</h1>
                         <p class="forbes__p">проекта в стадии реализации</p>
                     </div>
-                    <div class="grid1">
+                    <div class="grid1 grid-third">
                         <h1 class="forbes__h1-2">7 820</h1>
                         <p class="forbes__p">мест в детских садах и школах</p>
                     </div>
@@ -476,10 +481,14 @@
     <!-- article ./ -->
     <!-- login -->
     <div class="login" id="login">
-        <button class="close_Btn" id="close_Btn">закрыть</i></button>
+        <button class="close_Btn" id="close_Btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg></button>
         <div class="login__in">
             <h1 class="login__h1">Вход в личный кабинет</h1>
-            <input type="te" class="input__tel" name="" id="" placeholder="ТЕЛЕФОН">
+            <input type="te" class="input__tel" name="" id="" placeholder="телефон">
             <div class="login__btn">
                 <button class="bb1"><i style="position: relative; bottom: 3px; margin-right: .5em;"
                         class="bi bi-circle"></i> Подтвердить кодом из смс</button>
@@ -491,6 +500,70 @@
     </div>
     <div class="overlay" id="overlay"></div>
     <!-- login ./  -->
+    <!-- filter -->
+    <div class="filter">
+        <h1 class="filter__h1">Фильтры</h1>
+        <div class="filter-main">
+            <button class="filter-close_Btn"><svg style="position: relative; right: 1em;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg></button>
+            <div class="filter__in">
+                <div class="filter__flat">
+                    <div class="input__6">
+                        <p class="input__pl">Площадь квартиры, м2</p>
+                        <input type="range" min="21" max="256" value="50" class="slider" id="myRange-6">
+                        <span style="color: #fff;" id="value-6"></span>
+                    </div>
+                    <div class="input__7">
+                        <p class="input__pl">Стоимость жилья, млн</p>
+                        <input type="range" min="5" max="236" value="50" class="slider" id="myRange-7">
+                        <span style="margin-left: 1em; color: #fff;" id="value-7"></span>
+                    </div>
+                    <div class="filter__num">
+                        <p class="input__pl">Количество комнат</p>
+                        <div class="filter__buttons">
+                            <button class="filter__btn">C</button>
+                            <button class="filter__btn">1</button>
+                            <button class="filter__btn">2</button>
+                            <button class="filter__btn">3</button>
+                            <button class="filter__btn">4</button>
+                            <button class="filter__btn">5+</button>
+                        </div>
+                    </div>
+                    <div class="filter__sdan">
+                        <p class="input__pl">Готовность до</p>
+                        <div class="select">
+                            <select class="dateBtn" id="date" name="date">
+                                <option style="font-weight: 300;" value="" selected>Все</option>
+                                <option class="option" >Сдан</option>
+                                <option class="option" >3 квартал 2024</option>
+                                <option class="option" >4 квартал 2024</option>
+                                <option class="option" >2 квартал 2025</option>
+                                <option class="option" >3 квартал 2026</option>
+                                <option class="option" >3 квартал 2027</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter__check">
+                        <p class="input__pl">Регион</p>
+                        <div class="select">
+                            <select class="dateBtn" id="date" name="date">
+                                <option style="font-weight: 300;" value="" selected>Москва и МО</option>
+                                <option class="option" >Санкт-Петербург</option>
+                                <option class="option" >Калуга и область</option>
+                                <option class="option" >Владивосток</option>
+                                <option class="option" >Казань</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="filter__final">Показать все предложения</button>
+    </div>
+    <!-- filter ./  -->
     <!-- feedback  -->
     <div class="feedback">
         <div class="container">

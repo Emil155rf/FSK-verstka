@@ -7,6 +7,48 @@ const overlay = document.getElementById('overlay')
 const fbBtn = document.getElementById('fb__btn')
 const circle = document.getElementById('circle')
 
+const mapOpen = document.querySelector('.btn__1')
+const map = document.querySelector('.card-map')
+const cards = document.querySelector('.cards')
+const moreBtn = document.querySelector('.card__btn-3')
+const backBtn = document.querySelector('.btn__3')
+
+const buttons = document.querySelectorAll('.collapsible-button');
+
+const filter = document.querySelector('.filter')
+const openFilter = document.querySelector('.btn__2')
+const closeFilter = document.querySelector('.filter-close_Btn')
+
+
+
+
+
+function showFilter() {
+    filter.style.display = 'block'
+    closeFilter.style.display = 'block'
+
+}
+
+
+function hideFilter() {
+    filter.style.display = 'none'
+    closeFilter.style.display = 'none'
+
+}
+
+openFilter.onclick = showFilter
+
+closeFilter.onclick = hideFilter
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -46,8 +88,6 @@ function closeLogin() {
 open.onclick = showLogin
 
 close_btn.onclick = closeLogin
-
-
 
 
 
@@ -102,7 +142,28 @@ slider_5.oninput = function () {
 }
 
 
-const buttons = document.querySelectorAll('.collapsible-button');
+
+
+
+let slider_6 = document.getElementById("myRange-6");
+let output_6 = document.getElementById("value-6");
+output_5.innerHTML = slider_5.value;
+
+slider_6.oninput = function () {
+    output_6.innerHTML = this.value;
+}
+
+
+
+let slider_7 = document.getElementById("myRange-7");
+let output_7 = document.getElementById("value-7");
+output_5.innerHTML = slider_5.value;
+
+slider_7.oninput = function () {
+    output_7.innerHTML = this.value;
+}
+
+
 
 
 buttons.forEach(button => {
@@ -117,6 +178,38 @@ buttons.forEach(button => {
     })
 })
 
+
+
+
+
+function showMap() {
+    mapOpen.addEventListener('click', () => {
+        map.style.display = 'block'
+        cards.style.display = 'none'
+        moreBtn.style.display = 'none'
+        backBtn.style.display = 'block'
+
+    })
+
+
+
+}
+
+showMap()
+
+
+function hideMap() {
+    backBtn.addEventListener('click', () => {
+        map.style.display = 'none'
+        cards.style.display = 'grid'
+        moreBtn.style.display = 'block'
+        backBtn.style.display = 'none'
+
+    })
+
+}
+
+hideMap()
 
 
 
