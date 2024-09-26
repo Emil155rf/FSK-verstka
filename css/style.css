@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Porsche';
-    src: url(../fonts/PorscheNext-SemiBold.otf);
     line-height: 1.5;
     color: #333;
     background-color: #141414;
@@ -80,7 +79,7 @@ h5 {
 /* header */
 /* ================ */
 .header {
-    /* position: fixed; */
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,7 +87,8 @@ h5 {
     background-color: #040200;
     width: 100%;
     height: 3.75em;
-    z-index: 8;
+    z-index: 10000;
+    transition: .5s ease;
 
 }
 
@@ -195,7 +195,7 @@ h5 {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: rgb(35, 35, 35);
     min-width: 250px;
     max-width: 300px;
     border-radius: 15px;
@@ -317,12 +317,13 @@ h5 {
 .btn__1 {
     background-color: #e84e0e;
     width: 200px;
-    transition:  .5s ease;
+    transition: .5s ease;
 
 }
+
 .btn__1:focus {
     background-color: #0e0e0e;
-    border: 1px solid #e84e0e; 
+    border: 1px solid #e84e0e;
 
 }
 
@@ -333,6 +334,8 @@ h5 {
 
 
 }
+
+.bb {}
 
 
 
@@ -358,7 +361,7 @@ h5 {
 .flat__num {
     display: flex;
     flex-direction: column;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 .input__pl {}
@@ -387,11 +390,11 @@ h5 {
 
 
 .city__sdan {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .city__check {
-    margin-left: 4em;
+    margin-left: 4.5em;
 }
 
 
@@ -460,7 +463,7 @@ select {
 .card {
     position: relative;
     width: 400px;
-    height: 50vh;
+    height: 40vh;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
@@ -498,9 +501,12 @@ select {
 .card-buttons {
     position: absolute;
     top: 10px;
-    right: 85px;
     display: flex;
+    left: 10px;
     gap: 10px;
+    overflow: hidden;
+    font-size: 14px;
+
 }
 
 .card__btn {
@@ -520,6 +526,12 @@ select {
     border: 1px solid #fff;
     color: #fff;
     margin-top: 2.5em;
+    transition: .5s ease;
+}
+
+.card__btn-3:focus {
+    color: #e84e0e;
+    border-color: #0e0e0e;
 }
 
 .card-buttons button {
@@ -540,6 +552,7 @@ select {
     justify-content: center;
     align-items: center;
 }
+
 .card-map {
     display: none;
     position: relative;
@@ -778,7 +791,6 @@ select {
     transform: translateY(-4em);
 }
 
-.forbes__title {}
 
 .forbes__logo {
     width: 100px;
@@ -793,7 +805,7 @@ select {
     color: #fff;
     font-size: 3rem;
     line-height: 4.125rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     letter-spacing: 2px;
 }
 
@@ -838,12 +850,18 @@ select {
     border-left: none;
 }
 
+.articles__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
 .article__h1 {
     color: #fff;
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: 2em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .article-button {
@@ -1044,7 +1062,7 @@ select {
     transform: translate(-50%, -50%);
     background-color: #0e0e0e;
     padding: 20px;
-    z-index: 9999;
+    z-index: 10001;
     transition: .5s ease;
 }
 
@@ -1069,6 +1087,7 @@ select {
     align-items: center;
     height: 35vh;
 }
+
 .filter__h1 {
     font-size: 24px;
     color: #fff;
@@ -1123,7 +1142,6 @@ select {
 .filter__check {
     margin-right: 3em;
 }
-
 
 
 
@@ -1452,9 +1470,14 @@ select {
     .city__btn {
         display: none;
     }
+
     .login__h1 {
         position: relative;
         bottom: 1em;
+    }
+
+    .city__h1 {
+        margin-top: 2em;
     }
 }
 
@@ -1469,6 +1492,7 @@ select {
     .cards {
         grid-template-columns: 1fr 1fr !important;
     }
+
 
 
     .city__inner {
@@ -1503,6 +1527,7 @@ select {
         color: #fff;
 
     }
+
     .article__h1 {
         margin-left: .5em;
     }
@@ -1512,8 +1537,7 @@ select {
 
 
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {}
 
 @media screen and (max-width: 1200px) {
     .container {
@@ -1561,7 +1585,7 @@ select {
     .login {
         height: 10vh;
     }
-    
+
 }
 
 
@@ -1629,6 +1653,7 @@ select {
         grid-column-gap: 10px;
     }
 
+
     .footer__main-link {
         display: none;
     }
@@ -1674,6 +1699,7 @@ select {
     .stavka__btn-2 {
         display: none;
     }
+
     .login {
         height: 35%;
     }
@@ -1708,7 +1734,7 @@ select {
     }
 
     .login {
-        width: 100%;
+        width: 90%;
     }
 
 }
@@ -1725,6 +1751,7 @@ select {
 
     .bb {
         width: 40vw;
+        font-size: 14px;
     }
 
 
@@ -1740,11 +1767,12 @@ select {
     .feedback input {
         margin-top: 1em;
     }
+
     .article__h1 {
         font-size: 1.5em;
         margin-left: 1em;
     }
-    
+
 
 }
 
@@ -1770,9 +1798,11 @@ select {
         height: 55vh;
     }
 
+
     .scc {
         display: none;
     }
+
     .social__main {
         margin-left: 1.5em;
     }
@@ -1800,7 +1830,49 @@ select {
         margin-left: .5em;
     }
 
+    .filter__final {
+        transform: translateY(-3em);
+        font-size: 16px;
+        bottom: 4em;
+    }
+
+    .feedback__btn {
+        font-size: 14px;
+    }
+
+    .main__btn {
+        font-size: 14px;
+    }
+
 }
+
+
+
+
+@media screen and (min-width: 390px) and (max-width: 430px) {
+
+    .card {
+        max-width: 370px;
+        margin-top: 10px;
+    }
+
+    .main__btn {
+        transform: translateY(-.5em);
+    }
+
+}
+
+@media screen and (width: 390px) and (height: 844px) {
+
+
+    .login__in {
+        transform: translateY(-2em);
+    }
+
+}
+
+
+
 
 @media screen and (max-width: 430px) {
     .forbes__grid {
@@ -1814,17 +1886,29 @@ select {
     .forbes__h1 {
         font-size: 2em;
     }
+
     .grid-first {
         position: relative;
         bottom: .4em;
     }
+
     .grid-second {
         position: relative;
         bottom: .75em;
     }
+
     .grid-third {
         position: relative;
         bottom: .65em;
+    }
+
+    .credit__h1 {
+        position: relative;
+        top: 1em;
+        font-size: 1.5em;
+        text-align: left;
+        align-self: flex-start;
+        margin-left: .9em;
     }
 
 
@@ -1832,11 +1916,28 @@ select {
         position: relative;
         margin-right: 1.1em;
 
+
     }
 
     .credit__btn {
         width: 160px;
     }
+
+
+    .card-buttons {
+        position: absolute;
+        left: 1em;
+    }
+
+    .card__btn {
+        font-size: 11px;
+
+    }
+
+    .card__btn-2 {
+        font-size: 11px;
+    }
+
 
 
 
@@ -1890,6 +1991,7 @@ select {
     .feedback h1 {
         font-size: 24px;
     }
+
     .bb {
         font-size: 13px !important;
     }
@@ -1924,16 +2026,24 @@ select {
 
     }
 
+    .social__main {
+        margin-right: 1em;
+    }
+
     .forbes__grid {
         grid-column-gap: 20px !important;
 
     }
+
     .login {
         height: 350px;
     }
+
     .login__in {
         margin-top: 3em;
     }
+
+
     .grid-second {
         position: relative;
         top: .1em;
@@ -1951,8 +2061,13 @@ select {
     .footer__tel {
         font-size: 20px;
     }
+
     .login__in {
         margin-bottom: 5em;
+    }
+
+    .feedback__btn {
+        font-size: 12px;
     }
 }
 

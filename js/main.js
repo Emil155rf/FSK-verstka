@@ -19,26 +19,31 @@ const filter = document.querySelector('.filter')
 const openFilter = document.querySelector('.btn__2')
 const closeFilter = document.querySelector('.filter-close_Btn')
 
+const credit = document.querySelector('.cred')
+const scrollTo = document.querySelector('.forbes__h1')
+
+
 
 
 
 
 function showFilter() {
-    filter.style.display = 'block'
-    closeFilter.style.display = 'block'
+    openFilter.addEventListener('click', () => {
+        filter.style.display = 'block'
+        closeFilter.style.display = 'block'
+
+
+    })
+    closeFilter.addEventListener('click', () => {
+
+        filter.style.display = 'none'
+        closeFilter.style.display = 'none'
+
+    })
 
 }
 
-
-function hideFilter() {
-    filter.style.display = 'none'
-    closeFilter.style.display = 'none'
-
-}
-
-openFilter.onclick = showFilter
-
-closeFilter.onclick = hideFilter
+showFilter()
 
 
 
@@ -49,23 +54,17 @@ closeFilter.onclick = hideFilter
 
 
 
-
-
-
-
-function showPopup() {
+window.onload = function () {
     popup.style.display = 'block'
     closeBtn.style.display = 'block'
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none'
+        closeBtn.style.display = 'none'
+    })
 }
 
-function closePopup() {
-    popup.style.display = 'none'
-    closeBtn.style.display = 'none'
-}
 
-window.onload = showPopup
-
-closeBtn.onclick = closePopup
 
 
 
@@ -73,21 +72,26 @@ closeBtn.onclick = closePopup
 
 
 function showLogin() {
-    login.style.display = 'block'
-    close_btn.style.display = 'block'
-    overlay.style.display = 'block'
+    open.addEventListener('click', () => {
+        login.style.display = 'block'
+        close_btn.style.display = 'block'
+        overlay.style.display = 'block'
+
+    })
+
+
+    close_btn.addEventListener('click', () => {
+        login.style.display = 'none'
+        close_btn.style.display = 'none'
+        overlay.style.display = 'none'
+
+    })
+
 }
 
+showLogin()
 
-function closeLogin() {
-    login.style.display = 'none'
-    close_btn.style.display = 'none'
-    overlay.style.display = 'none'
-}
 
-open.onclick = showLogin
-
-close_btn.onclick = closeLogin
 
 
 
@@ -147,7 +151,7 @@ slider_5.oninput = function () {
 
 let slider_6 = document.getElementById("myRange-6");
 let output_6 = document.getElementById("value-6");
-output_5.innerHTML = slider_5.value;
+output_6.innerHTML = slider_6.value;
 
 slider_6.oninput = function () {
     output_6.innerHTML = this.value;
@@ -157,7 +161,7 @@ slider_6.oninput = function () {
 
 let slider_7 = document.getElementById("myRange-7");
 let output_7 = document.getElementById("value-7");
-output_5.innerHTML = slider_5.value;
+output_7.innerHTML = slider_7.value;
 
 slider_7.oninput = function () {
     output_7.innerHTML = this.value;
@@ -214,3 +218,23 @@ hideMap()
 
 
 
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector('.header').style.top = "0";
+    } else {
+        document.querySelector('.header').style.top = "-70px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+
+
+function scrollToCredit() {
+    credit.addEventListener('click', () => {
+        scrollTo.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    })
+}
+
+scrollToCredit()
