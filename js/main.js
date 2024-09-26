@@ -13,7 +13,7 @@ const cards = document.querySelector('.cards')
 const moreBtn = document.querySelector('.card__btn-3')
 const backBtn = document.querySelector('.btn__3')
 
-const buttons = document.querySelectorAll('.collapsible-button');
+const buttons = document.querySelectorAll('.collapsible-button')
 
 const filter = document.querySelector('.filter')
 const openFilter = document.querySelector('.btn__2')
@@ -100,71 +100,71 @@ showLogin()
 
 
 
-let slider = document.getElementById("myRange");
-let output = document.getElementById("value");
-output.innerHTML = slider.value;
+let slider = document.getElementById("myRange")
+let output = document.getElementById("value")
+output.innerHTML = slider.value
 
 slider.oninput = function () {
-    output.innerHTML = this.value;
+    output.innerHTML = this.value
 }
 
 
 
 
-let slider_2 = document.getElementById("myRange-2");
-let output_2 = document.getElementById("value-2");
-output_2.innerHTML = slider_2.value;
+let slider_2 = document.getElementById("myRange-2")
+let output_2 = document.getElementById("value-2")
+output_2.innerHTML = slider_2.value
 
 slider_2.oninput = function () {
-    output_2.innerHTML = this.value;
+    output_2.innerHTML = this.value
 }
 
-let slider_3 = document.getElementById("myRange-3");
-let output_3 = document.getElementById("value-3");
-output_3.innerHTML = slider_3.value;
+let slider_3 = document.getElementById("myRange-3")
+let output_3 = document.getElementById("value-3")
+output_3.innerHTML = slider_3.value
 
 slider_3.oninput = function () {
-    output_3.innerHTML = this.value;
+    output_3.innerHTML = this.value
 }
 
 
 
-let slider_4 = document.getElementById("myRange-4");
-let output_4 = document.getElementById("value-4");
-output_4.innerHTML = slider_4.value;
+let slider_4 = document.getElementById("myRange-4")
+let output_4 = document.getElementById("value-4")
+output_4.innerHTML = slider_4.value
 
 slider_4.oninput = function () {
-    output_4.innerHTML = this.value;
+    output_4.innerHTML = this.value
 }
 
-let slider_5 = document.getElementById("myRange-5");
-let output_5 = document.getElementById("value-5");
-output_5.innerHTML = slider_5.value;
+let slider_5 = document.getElementById("myRange-5")
+let output_5 = document.getElementById("value-5")
+output_5.innerHTML = slider_5.value
 
 slider_5.oninput = function () {
-    output_5.innerHTML = this.value;
+    output_5.innerHTML = this.value
 }
 
 
 
 
 
-let slider_6 = document.getElementById("myRange-6");
-let output_6 = document.getElementById("value-6");
-output_6.innerHTML = slider_6.value;
+let slider_6 = document.getElementById("myRange-6")
+let output_6 = document.getElementById("value-6")
+output_6.innerHTML = slider_6.value
 
 slider_6.oninput = function () {
-    output_6.innerHTML = this.value;
+    output_6.innerHTML = this.value
 }
 
 
 
-let slider_7 = document.getElementById("myRange-7");
-let output_7 = document.getElementById("value-7");
-output_7.innerHTML = slider_7.value;
+let slider_7 = document.getElementById("myRange-7")
+let output_7 = document.getElementById("value-7")
+output_7.innerHTML = slider_7.value
 
 slider_7.oninput = function () {
-    output_7.innerHTML = this.value;
+    output_7.innerHTML = this.value
 }
 
 
@@ -218,22 +218,31 @@ hideMap()
 
 
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector('.header').style.top = "0";
+let prevScrollpos = window.pageYOffset
+window.onscroll = function scrollMain() {
+    let currentScrollPos = window.pageYOffset
+    if (prevScrollpos > currentScrollPos || currentScrollPos < 300) {
+        document.querySelector('.header').style.top = "0"
     } else {
-        document.querySelector('.header').style.top = "-70px";
+        document.querySelector('.header').style.top = "-70px"
     }
-    prevScrollpos = currentScrollPos;
+    prevScrollpos = currentScrollPos
+
 }
+
+
+
+
+
+
+
+
 
 
 
 function scrollToCredit() {
     credit.addEventListener('click', () => {
-        scrollTo.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        scrollTo.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
     })
 }
 
