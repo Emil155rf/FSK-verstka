@@ -463,7 +463,7 @@ select {
 .card {
     position: relative;
     width: 400px;
-    height: 40vh;
+    height: 45vh;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease;
@@ -1443,7 +1443,12 @@ select {
 
 
 
-
+@media screen and (min-width: 2000px) {
+    .card {
+        height: 40vh;
+    }
+    
+}
 
 
 
