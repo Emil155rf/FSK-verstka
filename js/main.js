@@ -27,6 +27,7 @@ const scrollTo = document.querySelector('.forbes__h1')
 
 
 
+
 function showFilter() {
     openFilter.addEventListener('click', () => {
         filter.style.display = 'block'
