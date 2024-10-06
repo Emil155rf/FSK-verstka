@@ -327,7 +327,7 @@ h6 {
 
 .input__pl {
     font-size: 1.2em;
-    padding-top: 1.5em;
+    padding: .5em 0;
     color: #959596;
 }
 
@@ -569,7 +569,6 @@ select {
 .credit {
     background-color: #1c1b1b;
     margin-top: 2em;
-    /* height: 100vh; */
 }
 
 
@@ -579,7 +578,6 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 5em; */
 }
 
 .credit__main {
@@ -1328,7 +1326,6 @@ select {
 }
 
 .social__btn {
-    /* margin-top: 2em; */
     width: 50px;
     height: 50px;
     border-radius: 40px;
@@ -1524,7 +1521,6 @@ select {
 
 
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {}
 
 @media screen and (max-width: 1200px) {
     .container {
