@@ -252,8 +252,7 @@ h6 {
     background-color: transparent;
     color: #e84e0e;
     transition: .5s ease;
-    margin-bottom: 1em;
-    margin-left: 0.3em;
+    padding-bottom: .5em;
 }
 
 .popupBtn:hover {
@@ -337,6 +336,10 @@ h6 {
     margin-left: .5em;
 }
 
+#value-2 {
+    margin-left: 1em;
+}
+
 .input__2 {
     margin-left: 2em;
 }
@@ -379,7 +382,7 @@ h6 {
 }
 
 .city__check {
-    margin-left: 4.5em; 
+    margin-left: 4.5em;
 }
 
 
@@ -1409,7 +1412,7 @@ select {
         height: 2em;
         margin-top: 2em;
     }
-    
+
 }
 
 
@@ -1419,7 +1422,7 @@ select {
     .card {
         height: 40vh;
     }
-    
+
 }
 
 
@@ -1460,7 +1463,7 @@ select {
 
 @media screen and (min-width: 1200px) {
     .container__main {
-    padding-left: 2em;
+        padding-left: 2em;
 
     }
 }
