@@ -97,6 +97,7 @@ h6 {
     display: flex;
     justify-content: left;
     align-items: flex-start;
+    margin-left: 1em;
 }
 
 .header__logo {
@@ -850,8 +851,8 @@ select {
 }
 
 .article-button {
-    background-color: transparent;
     display: flex;
+    flex-direction: column;
 
     color: #0e0e0e;
     cursor: pointer;
@@ -867,8 +868,7 @@ select {
 
 .article__btn {
     color: #e84e0e;
-    margin-left: 1em;
-    background-color: transparent;
+    padding-top: 20px;
 }
 
 .collapsible-button:hover {
@@ -1211,7 +1211,6 @@ select {
 
 .fb__btn {
     margin-top: 1em;
-    background-color: transparent;
     color: #444;
 }
 
