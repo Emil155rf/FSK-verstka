@@ -4,8 +4,6 @@ const login = document.getElementById('login')
 const close_btn = document.getElementById('close_Btn')
 const open = document.getElementById('header__login')
 const overlay = document.getElementById('overlay')
-const fbBtn = document.getElementById('fb__btn')
-const circle = document.getElementById('circle')
 
 const mapOpen = document.querySelector('.btn__1')
 const map = document.querySelector('.card-map')
