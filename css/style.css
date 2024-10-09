@@ -617,6 +617,10 @@ select {
 }
 
 
+.credit__check {
+    padding-top: 1.5em;
+}
+
 
 .credit__btn:hover {
     border-color: #fff;
@@ -913,119 +917,6 @@ select {
     color: #e84e0e;
 }
 
-/* login  */
-/* ================ */
-
-.login {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    border-radius: 30px;
-    transform: translate(-50%, -50%);
-    background-color: #272727;
-    padding: 20px;
-    z-index: 9999;
-    transition: .5s ease;
-}
-
-.login__in {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-}
-
-.input__tel {
-    height: 2em;
-    width: 100%;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #444;
-    margin-top: 1em;
-    color: #fff;
-
-}
-
-.input__tel:focus {
-    border: 1px solid #e84e0e;
-}
-
-
-.close_Btn {
-    cursor: pointer;
-    color: #e84e0e;
-    background-color: transparent;
-    width: 2vw;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-
-    height: 2em;
-    border-radius: 15px;
-
-}
-
-.login__h1 {
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-top: 2em;
-    margin-bottom: 10px;
-
-}
-
-.main__btn {
-    width: 90%;
-    background-color: #e84e0e;
-    color: #fff;
-    height: 3em;
-    text-transform: uppercase;
-    border-radius: 15px;
-    border: 1px solid #e84e0e;
-    transition: .5s ease;
-    margin-top: 3em;
-    opacity: .4;
-}
-
-.login__btn {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
-    transform: translateY(1em);
-
-}
-
-.bb1 {
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: .5em;
-    margin-top: .5em;
-    background-color: transparent;
-    transition: .5s ease;
-}
-
-.bb1:hover .bi-circle {
-    color: #e84e0e;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-
-}
 
 /* filter  */
 /* ================================= */
@@ -1407,10 +1298,7 @@ select {
 
 
 @media screen and (min-width: 1600px) and (max-height: 1000px) {
-    .main__btn {
-        height: 2em;
-        margin-top: 2em;
-    }
+
 
 }
 
@@ -1450,10 +1338,7 @@ select {
         display: none;
     }
 
-    .login__h1 {
-        position: relative;
-        bottom: 1em;
-    }
+
 
     .city__h1 {
         margin-top: 2em;
@@ -1546,14 +1431,7 @@ select {
 
 
 
-    .login__btn {
-        justify-content: left;
-        align-items: flex-start;
-    }
 
-    .close_Btn {
-        width: 10vw;
-    }
 
 
 
@@ -1567,9 +1445,7 @@ select {
 
 
 @media screen and (min-width: 991px) {
-    .login {
-        height: 10vh;
-    }
+
 
 }
 
@@ -1692,9 +1568,7 @@ select {
         display: none;
     }
 
-    .login {
-        height: 35%;
-    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -1725,9 +1599,7 @@ select {
         margin-left: 1em;
     }
 
-    .login {
-        width: 90%;
-    }
+
 
 }
 
@@ -1747,9 +1619,7 @@ select {
     }
 
 
-    .login__h1 {
-        margin-top: 1em;
-    }
+
 
     .feedback__input {
         display: flex;
@@ -1832,10 +1702,7 @@ select {
         font-size: 14px;
     }
 
-    .main__btn {
-        font-size: 14px;
-        transform: translateY(1em);
-    }
+
 
 }
 
@@ -1849,18 +1716,13 @@ select {
         margin-top: 10px;
     }
 
-    .main__btn {
-        transform: translateY(-.5em);
-    }
+
 
 }
 
 @media screen and (width: 390px) and (height: 844px) {
 
 
-    .login__in {
-        transform: translateY(-2em);
-    }
 
 }
 
@@ -2028,13 +1890,6 @@ select {
 
     }
 
-    .login {
-        height: 350px;
-    }
-
-    .login__in {
-        margin-top: 3em;
-    }
 
 
     .grid-second {
@@ -2055,18 +1910,10 @@ select {
         font-size: 20px;
     }
 
-    .login__in {
-        margin-bottom: 5em;
-    }
+
 
     .feedback__btn {
         font-size: 12px;
     }
 }
 
-@media screen and (max-width: 350px) {
-    .login__in {
-        position: relative;
-        bottom: 2em;
-    }
-}
