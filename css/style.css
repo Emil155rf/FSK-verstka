@@ -688,7 +688,8 @@ select {
 .bank__name {
     color: #fff;
     display: block;
-    width: 10em;
+    width: 200px;
+    font-size: 16px;
 }
 
 .bank__stavka {
@@ -707,7 +708,6 @@ select {
 }
 
 .content {
-    padding: 0 15px;
     display: none;
     background-color: #272727;
     cursor: pointer;
@@ -1115,6 +1115,10 @@ select {
 
 .feedback__arrow:hover {
     color: #e84e0e;
+}
+
+.bi-arrow-right:visited {
+    color: #141414;
 }
 
 
@@ -1713,7 +1717,12 @@ select {
 }
 
 
-
+@media screen and (min-width: 430px) {
+    .content {
+        padding-left: 5.8em;
+    }
+    
+}
 
 
 @media screen and (max-width: 430px) {
@@ -1724,6 +1733,10 @@ select {
 
 
     }
+    .content {
+        padding-left: 1em;
+    }
+
 
     .forbes__h1 {
         font-size: 2em;
