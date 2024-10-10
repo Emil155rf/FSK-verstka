@@ -1297,10 +1297,6 @@ select {
 
 
 
-@media screen and (min-width: 1600px) and (max-height: 1000px) {
-
-
-}
 
 
 
@@ -1444,10 +1440,6 @@ select {
 
 
 
-@media screen and (min-width: 991px) {
-
-
-}
 
 @media screen and (max-height: 800px) {
     .card {
@@ -1720,11 +1712,6 @@ select {
 
 }
 
-@media screen and (width: 390px) and (height: 844px) {
-
-
-
-}
 
 
 
@@ -1916,4 +1903,3 @@ select {
         font-size: 12px;
     }
 }
-

@@ -1,4 +1,9 @@
 Одностраничный сайт по продаже недвижимости
 
+Стек:
+HTML
+CSS(flex, grid)
+BOOTSTRAP
+JS
 
-Посмотреть здесь - https://fsk-a.netlify.app
+https://fsk-a.netlify.app
