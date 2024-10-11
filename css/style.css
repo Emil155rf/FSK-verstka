@@ -1294,25 +1294,6 @@ select {
 
 
 
-@media screen and (min-width: 2000px) {
-    .card {
-        height: 40vh;
-    }
-
-}
-
-
-
-
-@media screen and (max-width: 1465px) {
-    .container__main {
-        position: relative;
-        right: 1em;
-        width: 80%;
-    }
-}
-
-
 
 
 
@@ -1332,14 +1313,13 @@ select {
     .city__h1 {
         margin-top: 2em;
     }
-}
 
-@media screen and (min-width: 1200px) {
     .container__main {
         padding-left: 2em;
 
     }
 }
+
 
 
 
@@ -1363,6 +1343,10 @@ select {
 
     .city__flat {
         display: none !important;
+    }
+
+    .container {
+        max-width: 992px;
     }
 
     .bb {
@@ -1392,17 +1376,6 @@ select {
         margin-left: .5em;
     }
 
-
-}
-
-
-
-
-@media screen and (max-width: 1200px) {
-    .container {
-        max-width: 992px;
-    }
-
     .header__nav {
         display: none !important;
     }
@@ -1420,14 +1393,11 @@ select {
 
 
 
-
-
-
-
-
-
-
 }
+
+
+
+
 
 
 
@@ -1444,10 +1414,6 @@ select {
 
 
 @media screen and (max-width: 991px) {
-    .cards {
-        margin-top: .1em;
-    }
-
 
     .forbes__grid {
         grid-template-columns: 1fr 1fr;
@@ -1504,6 +1470,12 @@ select {
     .cards {
         grid-row-gap: 10px;
         grid-column-gap: 10px;
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .card {
+        width: 90vw;
     }
 
 
@@ -1529,20 +1501,9 @@ select {
     }
 
 
-}
-
-@media screen and (max-width: 800px) {
-    .cards {
-        grid-template-columns: 1fr !important;
-    }
-
-    .card {
-        width: 90vw;
-    }
-
-
 
 }
+
 
 @media screen and (min-width: 750px) {
     .header__tel-svg {
@@ -1579,14 +1540,7 @@ select {
 
 }
 
-@media screen and (max-width: 650px) {
-    .forbes__logo {
-        margin-left: 1em;
-    }
 
-
-
-}
 
 @media screen and (max-width: 600px) {
     .credit__variant {
@@ -1601,6 +1555,10 @@ select {
     .bb {
         width: 40vw;
         font-size: 14px;
+    }
+
+    .forbes__logo {
+        margin-left: 1.5em;
     }
 
 
@@ -1639,7 +1597,18 @@ select {
     }
 }
 
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 500px) {
+    .forbes__grid {
+        grid-column-gap: 5px !important;
+
+
+    }
+
+    .feedback h1 {
+        font-size: 30px;
+    }
+
     .card {
         width: 400px;
         height: 55vh;
@@ -1653,24 +1622,6 @@ select {
     .social__main {
         margin-left: 1.5em;
     }
-
-
-
-
-
-}
-
-@media screen and (max-width: 500px) {
-    .forbes__grid {
-        grid-column-gap: 5px !important;
-
-
-    }
-
-    .feedback h1 {
-        font-size: 30px;
-    }
-
 
     .city__h1 {
         text-align: left;
@@ -1694,23 +1645,14 @@ select {
 
 
 
-@media screen and (min-width: 390px) and (max-width: 430px) {
 
-    .card {
-        max-width: 370px;
-        margin-top: 10px;
-    }
-
-
-
-}
 
 
 @media screen and (min-width: 430px) {
     .content {
         padding-left: 5.8em;
     }
-    
+
 }
 
 
@@ -1722,6 +1664,7 @@ select {
 
 
     }
+
     .content {
         padding-left: 1em;
     }
@@ -1780,6 +1723,10 @@ select {
 
     .card__btn-2 {
         font-size: 11px;
+    }
+    .card {
+        max-width: 370px;
+        margin-top: 10px;
     }
 
 
