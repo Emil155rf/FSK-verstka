@@ -1294,8 +1294,7 @@ select {
     }
 
     .container__main {
-        margin-right: 30em !important;
-        width: 100% !important;
+        width: 100%;
     }
 
 
@@ -1317,6 +1316,8 @@ select {
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 100px;
         margin-left: 2.5em;
+        transform: translateX(-1.3em);
+
     }
 
 
@@ -1335,14 +1336,6 @@ select {
     .article__btn-big {
         width: 100%;
     }
-
-    .forbes__grid {
-        transform: translateX(-1.3em);
-    }
-
-
-
-
 }
 
 @media screen and (max-width: 851px) {
@@ -1461,25 +1454,9 @@ select {
 }
 
 
-
-
-
-
-
-@media screen and (min-width: 550px) and (max-width: 991px) {
-    .forbes__logo {
-        margin-left: 1em;
-    }
-
-    .forbes__grid {
-        margin-left: 5em;
-    }
-}
-
-
 @media screen and (max-width: 500px) {
     .forbes__grid {
-        grid-column-gap: 5px !important;
+        grid-column-gap: 5px;
 
 
     }
@@ -1538,8 +1515,8 @@ select {
 @media screen and (max-width: 430px) {
     .forbes__grid {
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 20px !important;
-        margin-right: 2em;
+        grid-column-gap: 20px;
+        padding-left: 1em;
 
 
     }
@@ -1593,25 +1570,14 @@ select {
     .card-buttons {
         position: absolute;
         left: 1em;
-    }
-
-    .card__btn {
         font-size: 11px;
 
     }
 
-    .card__btn-2 {
-        font-size: 11px;
-    }
     .card {
         max-width: 370px;
         margin-top: 10px;
     }
-
-
-
-
-
 
     .popup {
         width: 15em;
@@ -1623,9 +1589,6 @@ select {
         width: 7em;
     }
 
-    .forbes__grid {
-        transform: translateX(.4em);
-    }
 
 
     .forbes__h1-2 {
@@ -1653,11 +1616,6 @@ select {
     .header__tel {
         display: none;
     }
-
-    .forbes__grid {
-        margin-right: 1.5em;
-    }
-
     .feedback h1 {
         font-size: 24px;
     }
@@ -1666,24 +1624,12 @@ select {
         font-size: 13px !important;
     }
 
-    .forbes__h1-2 {
-        font-size: 20px;
-    }
-
-    .forbes__p {
-        font-size: 16px;
-    }
-
     .card__btn {
         font-size: 12px;
     }
 
     .card__btn-2 {
         font-size: 12px;
-    }
-
-    .forbes__grid {
-        transform: translateX(-.1em);
     }
 
     .forbes__h1-2 {
@@ -1699,13 +1645,6 @@ select {
     .social__main {
         margin-right: 1em;
     }
-
-    .forbes__grid {
-        grid-column-gap: 20px !important;
-
-    }
-
-
 
     .grid-second {
         position: relative;
