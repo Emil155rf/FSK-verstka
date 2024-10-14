@@ -574,7 +574,8 @@ select {
 }
 
 .credit__main {
-    transform: translateY(-4em);
+    position: relative;
+    bottom: 4em;
 }
 
 .credit__h1 {
@@ -984,7 +985,8 @@ select {
     justify-content: center;
     align-items: center;
     margin-top: 10em;
-    transform: translateY(-3em);
+    position: relative;
+    bottom: 3em;
 }
 
 .feedback h1 {
