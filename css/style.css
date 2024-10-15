@@ -9,11 +9,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Porsche';
-    line-height: 1.5;
     color: #333;
     background-color: #141414;
-    margin-left: auto;
-    margin-right: auto;
 
 }
 
@@ -1400,10 +1397,6 @@ select {
         display: flex;
     }
 
-
-
-
-
     .header__tel {
         display: none;
     }
@@ -1434,9 +1427,6 @@ select {
     .forbes__logo {
         margin-left: 1.5em;
     }
-
-
-
 
     .feedback__input {
         display: flex;
