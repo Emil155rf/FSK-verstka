@@ -1346,6 +1346,10 @@ select {
         grid-template-columns: 1fr !important;
 
     }
+    .city__inner {
+        position: relative;
+        top: 2em;
+    }
 
     .card {
         width: 90vw;
@@ -1455,10 +1459,7 @@ select {
 
     }
 
-    .city__inner {
-        position: relative;
-        top: 2em;
-    }
+
 
     .feedback h1 {
         font-size: 30px;
