@@ -139,6 +139,11 @@ h6 {
 
 }
 
+#carouselExampleFade {
+    position: relative;
+    top: 3.8em;
+}
+
 
 /* dropdown  */
 /* =================== */
